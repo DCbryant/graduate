@@ -1,0 +1,45 @@
+.chat-wrapper{
+
+}
+
+
+.send-input{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 4px 11px;
+    width: 80%;
+    height: 32px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    transition: all .3s;
+    margin-right: 10px;
+}
+
+.send-wrapper{
+    position: fixed;
+    bottom: 74px;
+    width:100%;
+}
+
+.chatList{
+    width: 100%;
+    height:calc(100vh - 74px);
+    overflow: auto;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
