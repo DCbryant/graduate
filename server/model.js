@@ -37,12 +37,22 @@ const models = {
         'content':{type:String,require:true,default:''},
         'create_time':{'type':String,'require':true,'default':new Date().getTime()}
     },
+    specialLesson:{
+        'desc':{type:String,'require':true},
+        'content':{type:String,require:true,default:''},
+        'create_time':{'type':String,'require':true,'default':new Date().getTime()}
+    },
     notice:{
         'desc':{type:String,'require':true},
         'content':{type:String,require:true,default:''},
         'create_time':{'type':String,'require':true,'default':new Date().getTime()}
     },
     play:{
+        'desc':{type:String,'require':true},
+        'url':{type:String,require:true,default:''},
+        'create_time':{'type':String,'require':true,'default':new Date().getTime()}
+    },
+    internet:{
         'desc':{type:String,'require':true},
         'url':{type:String,require:true,default:''},
         'create_time':{'type':String,'require':true,'default':new Date().getTime()}
@@ -64,8 +74,7 @@ const models = {
     },
     researchItem:{
         'desc':{type:String,'require':true},
-        'type':{type:String,'require':true},
-        'part':{type:String,'require':true},
+        'content':{type:String,'require':true},
         'create_time':{'type':String,'require':true,'default':new Date().getTime()}
     },
     chat:{
@@ -76,7 +85,29 @@ const models = {
         'content':{'type':String,'require':true,'default':''},
         'create_time':{'type':String,'require':true,'default':new Date().getTime()}
     },
-    topic:{
+    material:{
+        index:{type:Number,'require':true},
+        description:{type:String,'require':true},
+        answer:{type:String,'require':true},
+        A:{type:String,'require':true},
+        B:{type:String,'require':true},
+        C:{type:String,'require':true},
+        D:{type:String,'require':true},
+        E:{type:String,'require':true,'default':''},
+        remark:{type:String,'require':true,'default':'0'},
+    },
+    welding:{
+        index:{type:Number,'require':true},
+        description:{type:String,'require':true},
+        answer:{type:String,'require':true},
+        A:{type:String,'require':true},
+        B:{type:String,'require':true},
+        C:{type:String,'require':true},
+        D:{type:String,'require':true},
+        E:{type:String,'require':true,'default':''},
+        remark:{type:String,'require':true,'default':'0'},
+    },
+    mechanical:{
         index:{type:Number,'require':true},
         description:{type:String,'require':true},
         answer:{type:String,'require':true},

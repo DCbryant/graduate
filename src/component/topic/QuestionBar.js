@@ -19,7 +19,7 @@ export default class QuestionBar extends Component {
               onChange={this.props.onChange}
             />
             {/* 如果当前已经检查，且回答与正确答案不符，则以红色显示正确的答案。 */}
-            {this.props.answered ? (this.props.question.answer===this.props.answer.answer? ('') : (<p  style={{"color":"red"}}>正确答案：{this.props.question.answer}</p>) ) : ('')} 
+            {this.props.answered ? (this.props.question.answer===this.props.answer.answer? (`回答正确`) : (<p  style={{"color":"red"}}>回答错误，正确答案是{this.props.question.answer}</p>) ) : ('')} 
         </div>
         )
     }

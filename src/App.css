@@ -6,6 +6,10 @@
 
 html,body{height:100%;}
 
+.bg{
+    background: #f0f0f0 url('http://jwc.yangtzeu.edu.cn/Template/images/background.jpg');
+}
+
 .header{
     width:100%;
     height: 64px;
@@ -118,4 +122,84 @@ footer{
     display:flex;
     justify-content:center;
     align-items:center;
+}
+
+.ant-layout-sider-children ul{
+   
+}
+
+.ant-layout-sider-children ul li {
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.ant-layout-sider-children ul li a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+
+.ant-layout-sider-children ul li:nth-child(2n){
+    background-color: #fff;
+}
+
+.ant-layout-sider-children ul li:nth-child(2n) a{
+    color:#000;
+}
+
+.ant-layout-sider-children ul li:nth-child(2n+1){
+    background-color: #ccc;
+}
+
+.ant-layout-content{
+    margin-left: 20px;
+    font-size: 14px;
+} 
+
+.ant-layout-content h2{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ant-layout-content p{
+    text-indent: 2em;
+    line-height: 2;
+} 
+
+.ant-layout-content input,
+.ant-layout-content textarea{
+    margin-left: 90px;
+}
+
+.ant-layout-content .ant-btn{
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.ant-layout-content .ant-btn ~ .ant-btn{
+    margin-left: 20px;
+}
+
+/* .ant-layout-content div{
+    text-align: center;
+    margin-left: 200px;
+}
+
+.ant-layout-content div h3{
+    margin-top: 18px;
+} */
+
+.ant-layout-content.special{
+    padding-left: 70px;
+}
+
+.ant-layout-content.special h3{
+    text-align: center;
+    margin: 14px 0;
+}
+
+
+.ant-layout-content.special .working h3{
+    text-align: justify;
 }

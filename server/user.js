@@ -13,17 +13,20 @@ const planModel = model.getModel('plan')
 const specialModel = model.getModel('special')
 const ItemModel = model.getModel('researchItem')
 const ChatModel = model.getModel('chat')
-const TopicModel = model.getModel('topic')
+const MaterialModel = model.getModel('material')
+const WeldingModel = model.getModel('welding')
+const MechanicalModel = model.getModel('mechanical')
+const InternetModel = model.getModel('internet')
 
 
-// TopicModel.create({ 
-//     'index':2,
-//     'description':'2、在结构性和扩散氢含量相同的情况下，确定冷裂纹敏感性应当是()',
-//     'answer':'A',
-//     'A':'A. 钢的碳当量',
-//     'B':'B. 钢的含碳量',
-//     'C':'C. 钢的组织',
-//     'D':'D. 焊接方法',
+// MechanicalModel.create({ 
+//     'index':5,
+//     'description':'5. 用一个平面低副联二个做平面运动的构件所形成的运动链共有（）个自由度。',
+//     'answer':'C',
+//     'A':'A、3',
+//     'B':'B、4',
+//     'C':'C、5',
+//     'D':'D、6',
 // }, function(error,doc){
 //     if(error) {
 //         console.log(error);
@@ -32,8 +35,11 @@ const TopicModel = model.getModel('topic')
 //     }
 //  })
 
- Router.get('/topic',(req,res) => {
-    TopicModel.find({},(err,doc) => {
+
+
+
+Router.get('/topic/material',(req,res) => {
+    MaterialModel.find({},(err,doc) => {
         if(!err){
             res.json({
                 doc
@@ -41,6 +47,53 @@ const TopicModel = model.getModel('topic')
         }
     })
 })
+Router.get('/topic/welding',(req,res) => {
+    WeldingModel.find({},(err,doc) => {
+        if(!err){
+            res.json({
+                doc
+            })
+        }
+    })
+})
+Router.get('/topic/mechanical',(req,res) => {
+    MechanicalModel.find({},(err,doc) => {
+        if(!err){
+            res.json({
+                doc
+            })
+        }
+    })
+})
+
+
+
+
+ Router.get('/work/internet',(req,res) => {
+    InternetModel.find({},(err,doc) => {
+        if(!err){
+            res.json({
+                doc
+            })
+        }
+    })
+})
+
+Router.post('/work/internet',(req,res) => {
+    const {id} = req.body
+    InternetModel.find({_id:id},(err,doc) => {
+        if(!err){
+            console.log(doc)
+            res.json({
+                doc
+            })
+        }
+    })
+})
+
+
+
+
 
 
 Router.get('/user/getmsglist',(req,res) => {

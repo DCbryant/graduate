@@ -8,15 +8,15 @@ const { Header, Footer, Sider, Content } = Layout
 class Research extends Component{
     render(){
         return(
-            <div style={{marginTop:30}}>
-                <Layout>
+            <div style={{marginTop:60}}>
+                <Layout >
                     <Sider style={{backgroundColor:'#fff'}}>
                         <ul>
                             <li><Link to="/research/item">科研项目</Link></li>
                             <li><Link to="/research/work">科研加工</Link></li>
                         </ul>
                     </Sider>
-                    <Content  style={{backgroundColor:'#fff'}}>
+                    <Content className='special'  style={{backgroundColor:'#fff'}}>
                         <Switch>
                             <Route exact path="/research/item" component={ResearchItem}/>
                             <Route path="/research/work" component={ResearchWorking}/>

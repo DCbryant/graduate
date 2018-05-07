@@ -50,7 +50,7 @@ import { Table, Icon, Divider } from 'antd'
 class Contact extends Component{
     render(){
         return(
-            <div style={{marginTop:30}}>
+            <div style={{marginTop:60}}>
                 <Table dataSource={dataSource} columns={columns} />
             </div>
         )

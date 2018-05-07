@@ -10,12 +10,6 @@ const { Meta } = Card
 )
 export default class QuestionBank extends React.Component{
 
-    handleClick = () => {
-        this.props.history.push({
-            pathname:'/topic'
-        })
-    }
-
     componentDidMount(){
         console.log(this.props)
     }
@@ -25,26 +19,50 @@ export default class QuestionBank extends React.Component{
             <div>
                 <Row>
                     <Col span={6}>
-                        <Card style={{cursor:'pointer'}} title='题库一' onClick={this.handleClick}>
-                            <Meta
-                                description="焊接"
-                            />
+                        <Card
+                            onClick = {() => {
+                                this.props.history.push({
+                                    pathname:'/topic',
+                                    state:'/material'
+                                })
+                            }}
+                            title='材料题库'
+                            hoverable
+                            style={{ width: 240 }}
+                            cover={<img alt="cailiao" height='300px' src="http://p7hlkcqwc.bkt.clouddn.com/cailiao.jpg" />}
+                        >
                         </Card>
                     </Col>
                     <Col span={2}></Col>
                     <Col span={6}>
-                        <Card title='题库二'>
-                            <Meta
-                                description="材料"
-                            />
+                        <Card
+                            onClick = {() => {
+                                this.props.history.push({
+                                    pathname:'/topic',
+                                    state:'/welding'
+                                })
+                            }}
+                            title='焊接题库'
+                            hoverable
+                            style={{ width: 240 }}
+                            cover={<img alt="hanjie" height='300px' src="http://p7hlkcqwc.bkt.clouddn.com/hanjie.jpg" />}
+                        >
                         </Card>
                     </Col>
                     <Col span={2}></Col>
                     <Col span={6}>
-                        <Card title='题库三'>
-                            <Meta
-                                description="机械"
-                            />
+                        <Card
+                            onClick = {() => {
+                                this.props.history.push({
+                                    pathname:'/topic',
+                                    state:'/mechanical'
+                                })
+                            }}
+                            title='机械题库'
+                            hoverable
+                            style={{ width: 240 }}
+                            cover={<img alt="example" height='300px' src="http://p7hlkcqwc.bkt.clouddn.com/jixie.jpg" />}
+                        >
                         </Card>
                     </Col>
                 </Row>

@@ -26,7 +26,7 @@ export default class Render extends React.Component{
     render(){
         console.log(this.state.input)
         return(
-            <div style={{marginTop:'30px'}}>
+            <div style={{marginTop:'60px'}}>
                 <Card title={this.state.input.desc}>
                     <ReactMarkdown source={this.state.input.content} />
                 </Card>

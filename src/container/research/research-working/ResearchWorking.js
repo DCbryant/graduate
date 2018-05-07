@@ -3,8 +3,8 @@ import React from 'react'
 export default class ResearchWorking extends React.Component{
     render(){
         return(
-            <div>
-                <h2>科研加工</h2>
+            <div className='working'>
+                <h3>科研加工</h3>
                 <p>
                     	工程实训中心在完成全校大学生实践教学的同时，也可以利用现有设备资源和技术资源为老师和学生提供科研加工服务，现在已成为学校的主要科研加工基地之一。主要加工设备有：
                 </p>

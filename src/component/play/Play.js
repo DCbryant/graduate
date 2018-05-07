@@ -12,9 +12,11 @@ export default class Play extends React.Component{
 
     componentDidMount(){
         const {path,id} = this.props.location.state
+        console.log(path,id)
         axios.post(`${path}`,{
             id:id
         }).then((response) => {
+            console.log(response)
             this.setState({
                 data:response.data.doc
             })

@@ -27,19 +27,44 @@
 .send-wrapper{
     position: fixed;
     bottom: 74px;
-    width:100%;
+    left: 336px;
+    width:600px;
 }
 
 .chatList{
-    width: 100%;
-    height:calc(100vh - 74px);
+    width: 600px;
+    margin: 0 auto;
+    height:calc(100vh - 100px);
     overflow: auto;
 }
 
 .left{
     text-align: left;
+    background-color: #ccc;
+    width: 600px;
+}
+
+.left li{
+    border: 20px;
+    padding: 8px 0;
+}
+
+.left .master{
+    
 }
 
 .right{
     text-align: right;
+    background-color: #2182F7;
+    width: 600px;
+    color: #fff;
+}
+
+.right .guest span{
+    color: #fff;
+}
+
+.right li{
+    border: 20px;
+    padding: 8px 0;
 }

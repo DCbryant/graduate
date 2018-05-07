@@ -9,7 +9,7 @@ const { Header, Footer, Sider, Content } = Layout
 class About extends Component{
     render(){
         return(
-            <div style={{marginTop:30}}>
+            <div style={{marginTop:60}}>
                 <Layout>
                     <Sider style={{backgroundColor:'#fff'}}>
                         <ul>

@@ -54,7 +54,7 @@ export default class Chat extends React.Component{
                             return v.from === userid ? 
                             (
                                 <div key={v._id} className='left'>
-                                    <span>
+                                    <span className='master'>
                                         <Icon type='user' /> {this.props.user.user}
                                     </span>
                                     <ul>
@@ -63,8 +63,8 @@ export default class Chat extends React.Component{
                                 </div>
                             ):(
                                 <div key={v._id} className='right'>
-                                    <span>
-                                        <Icon type='user' /> {this.props.location.state}
+                                    <span className='guest'>
+                                        {this.props.location.state} <Icon type='user' />
                                     </span>
                                     <ul>
                                         <li>{v.content}</li>

@@ -51,7 +51,7 @@ export default class ResearchItem extends React.Component{
 
     render(){
         return(
-            <div style={{width:500}}>
+            <div style={{width:800}}>
                 <h3 style={{ marginBottom: 16 }}>科研项目</h3>
                 <ul className='list'>
                     {

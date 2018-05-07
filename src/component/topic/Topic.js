@@ -3,7 +3,9 @@ import QuestionBar from './QuestionBar'
 import SubmitBar from './SubmitBar'
 import './index.css'
 import axios from 'axios'
+import {withRouter} from 'react-router-dom'
 
+@withRouter
 export default class Topic extends Component {
     constructor(props) {
       super(props);
@@ -19,7 +21,8 @@ export default class Topic extends Component {
       this.handleCheckClick = this.handleCheckClick.bind(this);
     }
     componentDidMount() { 
-        axios.get('/topic')
+        console.log(this.props.location.state)
+        axios.get(`/topic${this.props.location.state}`)
             .then((res) => {
                 let answers = []
                 res.data.doc.forEach(v => {

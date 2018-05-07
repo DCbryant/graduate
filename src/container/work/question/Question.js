@@ -43,13 +43,13 @@ export default class Question extends React.Component{
                             return (       
                                 <span key={item._id}>
                                     <Col className="gutter-row" span={6}>
-                                        <Card title={`${item.user}答疑`}
+                                        <Card title={`${item.user}`}
                                             onClick = {() => {
                                                 this.handleClick(item._id,item.user)
                                             }}
                                             hoverable
                                             style={{ width: 240 }}
-                                            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+                                            cover={<img alt="student" src="http://p7hlkcqwc.bkt.clouddn.com/student.png" />}
                                         >
                                             <Meta
                                                 description="材料问题~"

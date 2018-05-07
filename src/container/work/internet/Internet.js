@@ -20,6 +20,7 @@ export default class Internet extends React.Component{
     }
 
     handleClick = (id) => {
+        console.log(id)
         this.props.history.push({
             pathname:`/play/${id}`,
             state:{

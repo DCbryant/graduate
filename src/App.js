@@ -71,7 +71,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <BrowserRouter>
-          <div>
+          <div className='bg'>
             <Layout className='header'>
               <Header style={{backgroundColor:'#fff'}}>
                 <div className='logo' style={{float:'left'}}>
